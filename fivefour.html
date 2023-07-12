@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupees</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #get{
+            margin-left: 600px;
+            padding: 10px;
+            border-radius: 30px;
+            border-color: red;
+        }
+        button{
+            padding: 10px;
+            border-radius: 30px;
+            border-color: red;
+            font-size: 17px;
+        }
+        p{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(255, 5, 159);
+        }
+    </style>
+</head>
+<body>
+    <h1><h1>RUPEES TO DOLLERS</h1></h1>
+    <input id="get" type="number" placeholder="enter a rupees">
+    <button onclick="enter()">DOLLER</button>
+    <P></P>
+
+    <script>
+        function enter(){
+            let a= document.getElementById("get").value;
+            let b=a*0.01211
+            // b.toFixed(2)
+            document.getElementsByTagName("p")[0].innerHTML=b.toFixed(3);
+            
+        }
+    </script>
+</body>
+</html>

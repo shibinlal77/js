@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calander</title>
+
+    <style>
+        #box{
+            background-color: rgb(196, 249, 83);
+            margin-left: 80px;
+            margin-right: 903px;
+            
+        }
+        button{
+            padding: 20px;
+            margin-left: 5px;
+            
+        }
+        #box1{
+            display: flex;
+            
+        }
+        #one{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        #two{
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        #three{
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        #four{
+            margin-left: 35px;
+            font-weight: bold;
+        }
+        #five{
+            margin-left: 33px;
+            font-weight: bold;
+        }
+        #six{
+            margin-left: 34px;
+            font-weight: bold;
+        }
+        #seven{
+            margin-left: 35px;
+            font-weight: bold;
+        }
+        h1{
+            margin-left: 180px;
+            font-size: 50px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1><h1>Calander</h1></h1>
+
+    <div id="box">
+        <div id="box1">
+            <p id="one">SUN </p>
+            <p id="two"> MON  </p>
+            <p id="three"> TUE </p>
+            <p id="four">  WED</p>
+            <p id="five"> THU</p>
+            <p id="six"> FRI </p>
+            <p id="seven">SAT</p>
+        </div>
+
+        
+    <button disabled onclick="">25</button>
+    <button disabled onclick="">26</button>
+    <button disabled onclick="">27</button>
+    <button disabled onclick="">28</button>
+    <button disabled onclick="">29</button>
+    <button disabled onclick="">30</button>
+    <button style="background-color: red;" onclick="">01</button><br><br>
+
+    
+    <button style="background-color: rgb(255, 139, 139);" onclick="two()">02</button>
+    <button onclick="">03</button>
+    <button onclick="">04</button>
+    <button onclick="">05</button>
+    <button onclick="">06</button>
+    <button onclick="">07</button>
+    <button style="background-color: red;" onclick="">08</button>
+    
+    
+    <br><br>
+
+
+    <button style="background-color: red;" onclick="">09</button>
+    <button style="background-color: rgb(255, 139, 139);" onclick="ten()">10</button>
+    <button onclick="">11</button>
+    <button onclick="">12</button>
+    <button onclick="">13</button>
+    <button onclick="">14</button>
+    <button style="background-color: red;" onclick="">15</button>
+    
+    
+    <br><br>
+
+
+    <button style="background-color: red;" onclick="">16</button>
+    <button onclick="">17</button>
+    <button onclick="">18</button>
+    <button onclick="">19</button>
+    <button style="background-color: rgb(255, 139, 139);" onclick="twenty()">20</button>
+    <button onclick="">21</button>
+    <button style="background-color: red;" onclick="">22</button>
+    
+    <br><br>
+
+
+    <button style="background-color: red;" onclick="">23</button>
+    <button onclick="">24</button>
+    <button onclick="">25</button>
+    <button onclick="">26</button>
+    <button onclick="">27</button>
+    <button onclick="">28</button>
+    <button style="background-color: red;" onclick="">29</button>
+
+    
+    <br><br>
+
+
+    <button style="background-color: red;" onclick="">30</button>
+    <button onclick="">31</button>
+    <button disabled onclick="">01</button>
+    <button disabled onclick="">02</button>
+    <button disabled onclick="">03</button>
+    <button disabled onclick="">04</button>
+    <button  disabled onclick="">05</button>
+
+</div>
+
+<p style="font-size: 40px; font-weight: bold; color: darkmagenta; text-align: center;" id="result"></p>
+
+
+<script>
+    function two(){
+        var a="pongal"
+        document.getElementById("result").innerHTML=a
+    }
+
+    function ten(){
+        var a="diwali"
+        document.getElementById("result").innerHTML=a
+    }
+
+    function twenty(){
+        var a="christmas"
+        document.getElementById("result").innerHTML=a
+    }
+
+
+</script>
+
+    
+</body>
+</html>

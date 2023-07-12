@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #fact{
+            margin-left: 620px;
+            padding: 10px;
+            border-radius: 30px;
+            border-color: red;
+
+
+        }
+        button{
+            padding: 10px;
+            border-radius: 30px;
+            border-color: red;
+            font-size: 17px;
+        }
+        p{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(255, 5, 159);
+        }
+    </style>
+</head>
+<body>
+    <h1><h1>TO FIND THE FACTORIAL</h1></h1>
+    <h1>Enter a number</h1>
+    <input type="number" placeholder="enter a number" id="fact">
+    <button onclick="get()">Factorial</button>
+    <p id="ans"></p>
+
+
+
+    <script>
+        function get(){
+            i=1;
+            
+            var a=document.getElementById("fact").value
+            for(j=1;j<=a;j++)
+            {
+                i=i*j;
+
+            }
+            
+            document.getElementById("ans").innerHTML="The factorial of the number "+a+"  is :  "+i
+
+            
+        }
+    </script>
+</body>
+</html>

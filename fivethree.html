@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            
+            
+        }
+        h1{
+            text-align: center;
+            color: darkblue;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #box{
+            margin-left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1><h1>STOPWATCH</h1></h1>
+    <p>00:00:000</p>
+    <div id="box">
+    <button style="background-color: green; " >start</button>
+    <button  style="background-color:red; ">stop</button>
+    <button style="background-color: rgb(207, 233, 44); ">reset</button>
+</div>
+
+
+    <script>
+        var min =0;
+        var sec =0;
+        var mil =0;
+
+        function start(){
+           
+           
+             mil++;
+            if(mil==100){
+                mil=0
+                sec++; 
+            }
+            if(sec==60){
+                sec=0
+                min++;
+            }
+            
+
+            document.getElementsByTagName("p")[0].innerHTML= "0"+min+ ":"+"0"+sec+":"+mil;
+        }
+    let button=document.getElementsByTagName("button");
+
+    button[0].addEventListener("click",function(){
+     v= setInterval(start,1)
+    
+    })
+
+    button[1].addEventListener("click",function(){
+    clearInterval(v)
+    })
+
+    button[2].addEventListener("click",function(){
+    clearInterval(v)
+    min=0;
+    sec=0;
+    mil=0;
+    document.getElementsByTagName("p")[0].innerHTML="00:00:000"
+    })
+        
+
+    </script>
+
+</body>
+    
